@@ -1,0 +1,24 @@
+[package]
+name = "intsar-3d"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# 3D math library
+bytemuck = { version = "1.14", features = ["derive"] } # For POD types
+glam = "0.24.2"
+
+# Windowing and graphics
+winit = "0.29"
+wgpu = "0.19"
+
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+
+# Optional: logging
+log = "0.4"
+env_logger = "0.10"
+
+[dev-dependencies]
+# Optional: testing framework
+approx = "0.5"
